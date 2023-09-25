@@ -1,0 +1,7 @@
+import csv
+with open("c:\sqlite3\csv\Python.txt", "r") as f:
+    words = f.read().split()
+    largest_word = max(words, key=len)
+    smallest_word = min(words, key=len)
+    print("Largest word:", largest_word)
+    print("Smallest word:", smallest_word)
